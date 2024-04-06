@@ -6,7 +6,8 @@ dotenv.config();
 
 const Connection = () => {
 
-    const MONGODB_URI =process.env.DB_CONNECTION_STRING.replace('<password>',process.env.DATABASE_PASSWORD);
+    // const MONGODB_URI =process.env.DB_CONNECTION_STRING.replace('<password>',process.env.DATABASE_PASSWORD);
+    const MONGODB_URI = "mongodb+srv://rishuclasher10:ph98lS5uoTAJwNzX@cluster0.eh2gxh2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
     mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
