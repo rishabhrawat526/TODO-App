@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin:"https://todo-app-theta-gules.vercel.app/",
+        origin:["https://todo-app-theta-gules.vercel.app/"],
         methods:['POST','GET'],
         credentials:true
     }
